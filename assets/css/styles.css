@@ -5,7 +5,11 @@
     --primary: #F2B120;
     --secondary: #FB9569;
     --white: #ffffff;
+    --black : #000000;
     --dark: #272839;
+    --dark-grey: #707070;
+    --grey: #B2B2B2;
+    --light-grey: #e0e0e0;
     --dark-hover: #967633;
     --danger: #bb0000;
     --success: #24b300;
@@ -31,6 +35,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,.title {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 /* ------------------------------PADDING MARGIN------------------------------*/
@@ -75,6 +80,7 @@ h1,h2,h3,h4,h5,h6,.title {
 /* ------------------------------NAVIGATION BAR------------------------------*/
 .navbar {
     background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
 }
 .navbar .navbar-brand {
     max-width: 200px;
@@ -175,9 +181,163 @@ footer .useful-links li {
 }
 
 /* ------------------------------HOME------------------------------*/
+/* Banner */
 .home-banner .row{
     align-items: center;
 }
 .home-banner .banner-title {
-    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Vision Mission */
+.vision-mission-title {
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+.vision-mission .text-box {
+    position: relative;
+}
+.vision-mission .text-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 80%;
+    width: 90%;
+    background: var(--primary);
+    opacity: 0.2;
+}
+
+/* Trends */
+.home-trends {
+    text-align: center;
+}
+
+.home-trends .trends-title {
+    letter-spacing: 10px;
+}
+
+.home-trends .trends-clothes {
+    background: #f0f0f0;
+}
+
+.home-trends .trends-clothes a {
+    color: var(--dark);
+}
+.home-trends .trends-clothes .clothes-img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+}
+.home-trends .trends-clothes a:hover {
+    color: var(--black);
+    /* text-decoration: none; */
+}
+.home-trends .trends-clothes .clothes {
+    margin-bottom: 50px;
+}
+
+/* Products */
+.home-products .product-title {
+    letter-spacing: 10px;
+}
+.home-products ul.nav {
+    justify-content: flex-end;
+}
+.home-products ul.nav .nav-link {
+    border-radius: 0;
+    color: var(--dark);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home-products ul.nav .nav-link:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.home-products ul.nav .nav-link.active {
+    color: var(--dark);
+    background: none;
+    border-bottom: 2px solid var(--primary);
+}
+.home-products .products-clothes {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* Trends */
+    .home-trends .trends-clothes .clothes {
+        margin-bottom: 0px;
+    }
+    .home-trends .trends-clothes .clothes-img {
+        height: 225px;
+    }
+    /* Products */
+    .home-products .products-clothes {
+        height: 500px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Banner */
+    .home-banner .banner-title {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    /* Vision Mission */
+    .vision-mission-title {
+        width: 90%;
+    }
+    .vision-mission .row {
+        align-items: center;
+    }
+    .vision-mission .text-box:last-child{
+        margin-left: 10%;
+        padding-top: 5%;
+    }
+    .vision-mission .text-box:first-child {
+        padding-top: 8%;
+        margin-right: 10%;
+    }
+    .vision-mission .text-box p{
+        font-size: 24px;
+        width: 55%;
+        margin-right: auto;
+    }
+    .vision-mission .text-box::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 70%;
+        width: 70%;
+        background: var(--primary);
+        opacity: 0.2;
+    }
+    
+    /* Trends */
+    .home-trends .trends-clothes .clothes-img {
+        height: 325px;
+    }
+
+    /* Products */
+    .home-products .products-clothes {
+        margin-bottom: 0;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
 }
