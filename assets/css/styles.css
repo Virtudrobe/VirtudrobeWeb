@@ -20,8 +20,12 @@
 body {
     color: var(--dark);
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
 }
 
+:hover {
+    transition: 0.3s ease;
+}
 
 /* ------------------------------TEXT------------------------------*/
 
@@ -40,6 +44,32 @@ h1,h2,h3,h4,h5,h6,.title {
 .custom-py {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+/* ------------------------------BUTTONS------------------------------*/
+.btn {
+    padding: 17px 35px;
+}
+.c-btn-primary {
+    color: var(--white);
+    font-weight: 600;
+    background: var(--primary);
+}
+.c-btn-primary:hover {
+    color: var(--white);
+    font-weight: 600;
+    background: var(--secondary);
+}
+
+.c-btn-secondary {
+    color: var(--white);
+    font-weight: 600;
+    background: var(--secondary);
+}
+.c-btn-secondary:hover {
+    color: var(--white);
+    font-weight: 600;
+    background: var(--primary);
 }
 
 /* ------------------------------NAVIGATION BAR------------------------------*/
@@ -69,12 +99,10 @@ h1,h2,h3,h4,h5,h6,.title {
     color: var(--secondary);
     border: 3px solid var(--secondary);
     border-radius: 100%;
-    transition: .5s ease;
 }
 .navbar .navbar-nav .cart-dropdown:hover {
     color: var(--white);
     background: var(--secondary);
-    transition: .5s ease;
 }
 /* .navbar .navbar-nav .user-dropdown {
     color: var(--white);
@@ -144,4 +172,12 @@ footer .useful-links li {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     
+}
+
+/* ------------------------------HOME------------------------------*/
+.home-banner .row{
+    align-items: center;
+}
+.home-banner .banner-title {
+    font-weight: 700;
 }
