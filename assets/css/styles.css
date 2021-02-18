@@ -6,6 +6,7 @@
     --secondary: #FB9569;
     --white: #ffffff;
     --dark: #272839;
+    --dark-hover: #967633;
     --danger: #bb0000;
     --success: #24b300;
     --title-font: 'Roboto', sans-serif;
@@ -13,7 +14,134 @@
 }
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+body {
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+}
 
 
+/* ------------------------------TEXT------------------------------*/
+
+h1,h2,h3,h4,h5,h6,.title {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------PADDING MARGIN------------------------------*/
+/* Margin */
+.custom-my {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Padding */
+.custom-py {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ------------------------------NAVIGATION BAR------------------------------*/
+.navbar {
+    background-color: var(--white);
+}
+.navbar .navbar-brand {
+    max-width: 200px;
+}
+.navbar .navbar-collapse {
+    align-items: center;
+}
+.navbar .navbar-collapse .navbar-nav {
+    align-items: center;
+}
+/* nav-link */
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+.navbar .navbar-nav .icon-nav.dropdown-toggle::after {
+    content: none;
+}
+.navbar .navbar-nav .cart-dropdown {
+    color: var(--secondary);
+    border: 3px solid var(--secondary);
+    border-radius: 100%;
+    transition: .5s ease;
+}
+.navbar .navbar-nav .cart-dropdown:hover {
+    color: var(--white);
+    background: var(--secondary);
+    transition: .5s ease;
+}
+/* .navbar .navbar-nav .user-dropdown {
+    color: var(--white);
+    border: 3px solid var(--dark);
+    background: var(--dark);
+    border-radius: 100%;
+} */
+
+/* ------------------------------FOOTER------------------------------*/
+footer {
+    background: var(--dark);
+    color: var(--white);
+}
+.footer-brand {
+    width: 200px;
+    margin-bottom: 15px;
+}
+footer .social-media a:hover img {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px rgba(242, 177, 32, 0.5));
+}
+footer .useful-links {
+    column-count: 2;
+}
+footer .title {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 18px;
+}
+footer .useful-links li {
+    margin-bottom: 10px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* MARGIN AND PADDING */
+    /* Margin */
+    .custom-my {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    /* Padding */
+    .custom-py {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    /* NAVIGATION BAR */
+    .navbar {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .navbar .nav-item {
+        padding: 0 15px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
