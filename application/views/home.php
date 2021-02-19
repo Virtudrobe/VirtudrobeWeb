@@ -20,7 +20,7 @@
     <section class="vision-mission custom-my">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4">
+                <div class="col-lg-3 col-md-5">
                     <h1 class="vision-mission-title">
                         VISION & MISSION
                     </h1>
@@ -121,6 +121,31 @@
                 <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">...
                 </div>
                 <div class="tab-pane fade" id="pills-man" role="tabpanel" aria-labelledby="pills-man-tab">...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation -->
+    <section class="home-recommendation custom-my">
+        <div class="container">
+            <div class="recommendation-wrapper">
+                <div class="recommendation">
+                    <h1 class="recommendation-title">
+                    <span class="underline"></span> These Clothes Might Suit You
+                    </h1>
+                </div>
+                <div class="recommendation">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes8.jpg" alt="">
+                </div>
+                <div class="recommendation">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes9.jpg" alt="">
+                </div>
+                <div class="recommendation">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes10.jpg" alt="">
+                </div>
+                <div class="recommendation">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes11.jpg" alt="">
                 </div>
             </div>
         </div>
