@@ -1,4 +1,10 @@
 <main class="home">
+<?php
+    $i = 1;
+    foreach ($products as $product) : ?>
+    <p><?= $product?></p>
+    <?php $i++;
+    endforeach ?>
     <!-- Banner -->
     <section class="home-banner custom-my">
         <div class="container">
@@ -52,7 +58,7 @@
                     <div class="col-md-4">
                         <a href="#">
                             <div class="clothes">
-                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/clothes/clothes1.jpg" alt="Clothes">
+                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/products/clothes1.jpg" alt="Clothes">
                                 <h3>Lorem Ipsum</h3>
                                 <p>ut sem viverra aliquet eget sit</p>
                             </div>
@@ -61,7 +67,7 @@
                     <div class="col-md-4">
                         <a href="#">
                             <div class="clothes">
-                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/clothes/clothes2.jpg" alt="Clothes">
+                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/products/clothes2.jpg" alt="Clothes">
                                 <h3>Lorem Ipsum</h3>
                                 <p>ut sem viverra aliquet eget sit</p>
                             </div>
@@ -70,7 +76,7 @@
                     <div class="col-md-4">
                         <a href="#">
                             <div class="clothes">
-                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/clothes/clothes3.jpg" alt="Clothes">
+                                <img class="clothes-img mb-3" src="<?= base_url('assets/'); ?>img/products/clothes3.jpg" alt="Clothes">
                                 <h3>Lorem Ipsum</h3>
                                 <p>ut sem viverra aliquet eget sit</p>
                             </div>
@@ -105,16 +111,16 @@
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/clothes/clothes4.jpg" alt=""></a>
+                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/products/clothes4.jpg" alt=""></a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/clothes/clothes5.jpg" alt=""></a>
+                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/products/clothes5.jpg" alt=""></a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/clothes/clothes6.png" alt=""></a>
+                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/products/clothes6.png" alt=""></a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/clothes/clothes7.jpg" alt=""></a>
+                            <a href="#"><img class="products-clothes" src="<?= base_url('assets/'); ?>img/products/clothes7.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -136,16 +142,16 @@
                     </h1>
                 </div>
                 <div class="recommendation">
-                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes8.jpg" alt="">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/products/clothes8.jpg" alt="">
                 </div>
                 <div class="recommendation">
-                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes9.jpg" alt="">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/products/clothes9.jpg" alt="">
                 </div>
                 <div class="recommendation">
-                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes10.jpg" alt="">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/products/clothes10.jpg" alt="">
                 </div>
                 <div class="recommendation">
-                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/clothes/clothes11.jpg" alt="">
+                    <img class="img-fluid" src="<?= base_url('assets/'); ?>img/products/clothes11.jpg" alt="">
                 </div>
             </div>
         </div>

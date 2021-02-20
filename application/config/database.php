@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => '103.145.227.178:3306',
+	'username' => 'tugaskul_root',
+	'password' => 'myp455w0rdUIB',
+	'database' => 'tugaskul_virtudrobe',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
